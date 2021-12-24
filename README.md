@@ -1,5 +1,7 @@
 # RenameHybridAADAutopilotDevices
-Here is a script inspired by Michael Niehaus script Rename Computer for hybrid devices : https://github.com/mtniehaus/RenameComputer  without any needs of azure functions, everything is in the script
+Here is a script inspired by Michael Niehaus script Rename Computer for hybrid devices : https://github.com/mtniehaus/RenameComputer  without any needs of azure functions, everything is in the script, with option to check if the new computer already exists in AD
+
+The prerequisites are same (Delegation access to SELF)
 
 the only difference is in this part of script : 
 
@@ -26,4 +28,5 @@ Replaced by this :
     }
     While ($Exists -eq $True)
     
-    To set up the RenameComputer app in Intune go to : https://github.com/mtniehaus/RenameComputer or https://oofhours.com/2020/05/19/renaming-autopilot-deployed-hybrid-azure-ad-join-devices/
+   
+   To set up the RenameComputer app in Intune go to : https://github.com/mtniehaus/RenameComputer or https://oofhours.com/2020/05/19/renaming-autopilot-deployed-hybrid-azure-ad-join-devices/
